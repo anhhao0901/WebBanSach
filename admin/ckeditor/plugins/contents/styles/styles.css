@@ -1,0 +1,101 @@
+
+@font-face {
+    font-family: 'MontserratL';
+    src: url('Montserrat-Light.eot');
+    src: url('Montserrat-Light.eot?#iefix') format('embedded-opentype'),
+        url('Montserrat-Light.woff2') format('woff2'),
+        url('Montserrat-Light.woff') format('woff'),
+        url('Montserrat-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Regular.eot');
+    src: url('Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Montserrat-Regular.woff2') format('woff2'),
+        url('Montserrat-Regular.woff') format('woff'),
+        url('Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body{
+    font-family: 'MontserratL';
+    line-height: 1.4;
+}
+.widget-toc{
+
+
+
+	display: table;
+
+	border: 1px solid #a2a9b1;
+
+	font-size: 95%;
+
+	background-color: aliceblue;
+
+    padding: 10px;
+
+    border-radius: 10px;
+
+    margin-bottom: 10px;
+
+}
+
+
+
+.widget-toc  ol {
+
+	padding-right: 0px;
+
+	counter-reset: item;
+
+}
+
+.widget-toc ol li {
+
+	display: block;
+
+	position: relative;
+
+}
+
+.widget-toc  ol li:before {
+
+	content: counters(item, ".");
+
+	counter-increment: item;
+
+	position: absolute;
+
+	margin-right: 100%;
+
+	right: 0.5rem;
+
+}
+
+
+
+
+
+.toc-title{
+
+
+
+	text-align: center;
+
+	font-weight: 700;
+
+	margin: 0;
+
+	padding: 0;
+
+
+
+}
